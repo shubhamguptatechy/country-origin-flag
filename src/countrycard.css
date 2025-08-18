@@ -1,0 +1,44 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px; /* Fixed card height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Flag container with consistent height */
+.flag-container {
+  width: 100%;
+  height: 160px; /* Fixed flag height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flag image cropped to fill container */
+.flag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use 'contain' if you prefer no cropping */
+}
+
+/* Title and text styling */
+h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
